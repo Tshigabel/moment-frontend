@@ -1,0 +1,307 @@
+Build 'Standard Bank Home Services / Full Build' #51, default branch 'refs/heads/dev'
+Triggered 2021-05-19 09:05:02 by 'Git'
+Started 2021-05-19 09:05:05 on 'esbuild-docker-2'
+Finished 2021-05-19 09:07:01 with status FAILURE 'Exit code 127 (Step: Command Line) (new)'
+VCS revisions: 'https://github.com/jigsawxyz/looksee-mobile-app#refs/heads/dev' (Git): 1b116ec5d913fe71e0e44f8b3e1e78e740093145 (branch 'refs/heads/dev')
+TeamCity URL https://teamcity.entelectprojects.co.za:8443/viewLog.html?buildId=552590&buildTypeId=StandardBankHomeServices_Build 
+TeamCity server version is 2019.1.3 (build 66439), server timezone: CAT (UTC+02:00)
+
+[09:05:02]E: bt1898 (1m:58s)
+[09:05:02]i: TeamCity server version is 2019.1.3 (build 66439)
+[09:05:02] : The build is removed from the queue to be prepared for the start
+[09:05:02] : Collecting changes in 1 VCS root (2s)
+[09:05:02] :	 [Collecting changes in 1 VCS root] VCS Root details
+[09:05:02] :		 [VCS Root details] "https://github.com/jigsawxyz/looksee-mobile-app#refs/heads/dev" {instance id=6661, parent internal id=1233, parent id=StandardBankHomeServices_HttpsGithubComJigsawxyzLookseeMobileAppRefsHeadsDev, description: "https://github.com/jigsawxyz/looksee-mobile-app#refs/heads/dev"}
+[09:05:04]i:	 [Collecting changes in 1 VCS root] Detecting changes in VCS root 'https://github.com/jigsawxyz/looksee-mobile-app#refs/heads/dev' (used in 'Full Build')
+[09:05:04]i:	 [Collecting changes in 1 VCS root] Will collect changes for 'https://github.com/jigsawxyz/looksee-mobile-app#refs/heads/dev' starting from revision 1b116ec5d913fe71e0e44f8b3e1e78e740093145
+[09:05:04] :	 [Collecting changes in 1 VCS root] Compute revision for 'https://github.com/jigsawxyz/looksee-mobile-app#refs/heads/dev'
+[09:05:04] :		 [Compute revision for 'https://github.com/jigsawxyz/looksee-mobile-app#refs/heads/dev'] Upper limit revision: 1b116ec5d913fe71e0e44f8b3e1e78e740093145
+[09:05:04]i:		 [Compute revision for 'https://github.com/jigsawxyz/looksee-mobile-app#refs/heads/dev'] MaxModId = 1010569
+[09:05:04] :		 [Compute revision for 'https://github.com/jigsawxyz/looksee-mobile-app#refs/heads/dev'] Latest commit attached to build configuration (with id <= 1010569): 1b116ec5d913fe71e0e44f8b3e1e78e740093145
+[09:05:04] :		 [Compute revision for 'https://github.com/jigsawxyz/looksee-mobile-app#refs/heads/dev'] Computed revision: 1b116ec5d913fe71e0e44f8b3e1e78e740093145
+[09:05:05] : Starting the build on the agent "esbuild-docker-2"
+[09:05:05]i: Agent time zone: Etc/UTC
+[09:05:05]i: Agent is running under JRE: 11.0.9.1+1-Ubuntu-0ubuntu1.18.04
+[09:05:05] : Updating tools for build
+[09:05:05] :	 [Updating tools for build] Tools are not required for the build
+[09:05:05]i: Docker monitor started with command: /bin/sh -c "docker events --format "{{json .}}""
+[09:05:05] : Clearing temporary directory: /opt/teamcity/temp/buildTmp
+[09:05:05] : Publishing internal artifacts (4s)
+[09:05:10] :	 [Publishing internal artifacts] Publishing 1 file using [ArtifactsCachePublisher]
+[09:05:10] :	 [Publishing internal artifacts] Publishing 1 file using [WebPublisher]
+[09:05:05] : Using vcs information from agent file: b07538ca1b320875.xml
+[09:05:05] : Checkout directory: /opt/teamcity/work/b07538ca1b320875
+[09:05:05] : Updating sources: auto checkout (on agent) (6s)
+[09:05:05] :	 [Updating sources] Will use agent side checkout
+[09:05:05] :	 [Updating sources] VCS Root: https://github.com/jigsawxyz/looksee-mobile-app#refs/heads/dev (6s)
+[09:05:05] :		 [VCS Root: https://github.com/jigsawxyz/looksee-mobile-app#refs/heads/dev] revision: 1b116ec5d913fe71e0e44f8b3e1e78e740093145
+[09:05:05] :		 [VCS Root: https://github.com/jigsawxyz/looksee-mobile-app#refs/heads/dev] Git version: 2.17.1.0
+[09:05:05] :		 [VCS Root: https://github.com/jigsawxyz/looksee-mobile-app#refs/heads/dev] Update git mirror (/opt/teamcity/system/git/git-836D48BE.git) (4s)
+[09:05:05] :			 [Update git mirror (/opt/teamcity/system/git/git-836D48BE.git)] /usr/bin/git config http.sslCAInfo
+[09:05:05] :			 [Update git mirror (/opt/teamcity/system/git/git-836D48BE.git)] /usr/bin/git show-ref
+[09:05:05] :			 [Update git mirror (/opt/teamcity/system/git/git-836D48BE.git)] /usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass10785864209814194596 -c credential.helper= ls-remote origin
+[09:05:07] :			 [Update git mirror (/opt/teamcity/system/git/git-836D48BE.git)] /usr/bin/git show-ref refs/remotes/origin/dev
+[09:05:07] :			 [Update git mirror (/opt/teamcity/system/git/git-836D48BE.git)] /usr/bin/git show-ref refs/heads/dev
+[09:05:07] :			 [Update git mirror (/opt/teamcity/system/git/git-836D48BE.git)] /usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev (2s)
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Enumerating objects: 128, done.        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Counting objects:   0% (1/105)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Counting objects:   1% (2/105)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Counting objects:   2% (3/105)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Counting objects:   3% (4/105)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Counting objects:   4% (5/105)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Counting objects:   5% (6/105)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Counting objects:   6% (7/105)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Counting objects:   7% (8/105)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Counting objects:   8% (9/105)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Counting objects:   9% (10/105)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Counting objects:  10% (11/105)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Counting objects:  11% (12/105)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Counting objects:  12% (13/105)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Counting objects:  13% (14/105)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Counting objects:  14% (15/105)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Counting objects:  15% (16/105)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Counting objects:  16% (17/105)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Counting objects:  17% (18/105)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Counting objects:  18% (19/105)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Counting objects:  19% (20/105)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Counting objects:  20% (21/105)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Counting objects:  21% (23/105)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Counting objects:  22% (24/105)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Counting objects:  23% (25/105)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Counting objects:  24% (26/105)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Counting objects:  25% (27/105)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Counting objects:  26% (28/105)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Counting objects:  27% (29/105)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Counting objects:  28% (30/105)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Counting objects:  29% (31/105)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Counting objects:  30% (32/105)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Counting objects:  31% (33/105)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Counting objects:  32% (34/105)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Counting objects:  33% (35/105)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Counting objects:  34% (36/105)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Counting objects:  35% (37/105)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Counting objects:  36% (38/105)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Counting objects:  37% (39/105)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Counting objects:  38% (40/105)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Counting objects:  39% (41/105)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Counting objects:  40% (42/105)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Counting objects:  41% (44/105)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Counting objects:  42% (45/105)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Counting objects:  43% (46/105)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Counting objects:  44% (47/105)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Counting objects:  45% (48/105)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Counting objects:  46% (49/105)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Counting objects:  47% (50/105)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Counting objects:  48% (51/105)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Counting objects:  49% (52/105)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Counting objects:  50% (53/105)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Counting objects:  51% (54/105)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Counting objects:  52% (55/105)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Counting objects:  53% (56/105)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Counting objects:  54% (57/105)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Counting objects:  55% (58/105)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Counting objects:  56% (59/105)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Counting objects:  57% (60/105)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Counting objects:  58% (61/105)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Counting objects:  59% (62/105)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Counting objects:  60% (63/105)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Counting objects:  61% (65/105)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Counting objects:  62% (66/105)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Counting objects:  63% (67/105)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Counting objects:  64% (68/105)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Counting objects:  65% (69/105)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Counting objects:  66% (70/105)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Counting objects:  67% (71/105)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Counting objects:  68% (72/105)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Counting objects:  69% (73/105)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Counting objects:  70% (74/105)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Counting objects:  71% (75/105)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Counting objects:  72% (76/105)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Counting objects:  73% (77/105)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Counting objects:  74% (78/105)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Counting objects:  75% (79/105)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Counting objects:  76% (80/105)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Counting objects:  77% (81/105)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Counting objects:  78% (82/105)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Counting objects:  79% (83/105)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Counting objects:  80% (84/105)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Counting objects:  81% (86/105)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Counting objects:  82% (87/105)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Counting objects:  83% (88/105)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Counting objects:  84% (89/105)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Counting objects:  85% (90/105)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Counting objects:  86% (91/105)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Counting objects:  87% (92/105)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Counting objects:  88% (93/105)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Counting objects:  89% (94/105)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Counting objects:  90% (95/105)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Counting objects:  91% (96/105)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Counting objects:  92% (97/105)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Counting objects:  93% (98/105)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Counting objects:  94% (99/105)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Counting objects:  95% (100/105)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Counting objects:  96% (101/105)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Counting objects:  97% (102/105)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Counting objects:  98% (103/105)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Counting objects:  99% (104/105)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Counting objects: 100% (105/105)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Counting objects: 100% (105/105), done.        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Compressing objects:   2% (1/40)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Compressing objects:   5% (2/40)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Compressing objects:   7% (3/40)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Compressing objects:  10% (4/40)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Compressing objects:  12% (5/40)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Compressing objects:  15% (6/40)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Compressing objects:  17% (7/40)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Compressing objects:  20% (8/40)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Compressing objects:  22% (9/40)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Compressing objects:  25% (10/40)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Compressing objects:  27% (11/40)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Compressing objects:  30% (12/40)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Compressing objects:  32% (13/40)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Compressing objects:  35% (14/40)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Compressing objects:  37% (15/40)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Compressing objects:  40% (16/40)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Compressing objects:  42% (17/40)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Compressing objects:  45% (18/40)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Compressing objects:  47% (19/40)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Compressing objects:  50% (20/40)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Compressing objects:  52% (21/40)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Compressing objects:  55% (22/40)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Compressing objects:  57% (23/40)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Compressing objects:  60% (24/40)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Compressing objects:  62% (25/40)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Compressing objects:  65% (26/40)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Compressing objects:  67% (27/40)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Compressing objects:  70% (28/40)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Compressing objects:  72% (29/40)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Compressing objects:  75% (30/40)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Compressing objects:  77% (31/40)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Compressing objects:  80% (32/40)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Compressing objects:  82% (33/40)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Compressing objects:  85% (34/40)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Compressing objects:  87% (35/40)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Compressing objects:  90% (36/40)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Compressing objects:  92% (37/40)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Compressing objects:  95% (38/40)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Compressing objects:  97% (39/40)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Compressing objects: 100% (40/40)        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Compressing objects: 100% (40/40), done.        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] remote: Total 77 (delta 53), reused 57 (delta 36), pack-reused 0        
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev] From https://github.com/jigsawxyz/looksee-mobile-app
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev]    aa08fa9..1b116ec  dev        -> dev
+[09:05:09]i:				 [/usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass12621113297673176408 -c credential.helper= fetch --progress origin +refs/heads/dev:refs/heads/dev]    aa08fa9..1b116ec  dev        -> origin/dev
+[09:05:09] :			 [Update git mirror (/opt/teamcity/system/git/git-836D48BE.git)] /usr/bin/git log -n1 --pretty=format:%H%x20%s 1b116ec5d913fe71e0e44f8b3e1e78e740093145 --
+[09:05:09] :			 [Update git mirror (/opt/teamcity/system/git/git-836D48BE.git)] /usr/bin/git pack-refs --all
+[09:05:09] :		 [VCS Root: https://github.com/jigsawxyz/looksee-mobile-app#refs/heads/dev] Update checkout directory (/opt/teamcity/work/b07538ca1b320875) (2s)
+[09:05:09] :			 [Update checkout directory (/opt/teamcity/work/b07538ca1b320875)] /usr/bin/git config lfs.storage /opt/teamcity/system/git/git-836D48BE.git/lfs
+[09:05:09] :			 [Update checkout directory (/opt/teamcity/work/b07538ca1b320875)] /usr/bin/git config core.sparseCheckout true
+[09:05:09] :			 [Update checkout directory (/opt/teamcity/work/b07538ca1b320875)] /usr/bin/git config http.sslCAInfo
+[09:05:09] :			 [Update checkout directory (/opt/teamcity/work/b07538ca1b320875)] /usr/bin/git show-ref
+[09:05:09] :			 [Update checkout directory (/opt/teamcity/work/b07538ca1b320875)] /usr/bin/git show-ref refs/remotes/origin/dev
+[09:05:09] :			 [Update checkout directory (/opt/teamcity/work/b07538ca1b320875)] /usr/bin/git log -n1 --pretty=format:%H%x20%s 1b116ec5d913fe71e0e44f8b3e1e78e740093145 --
+[09:05:09] :			 [Update checkout directory (/opt/teamcity/work/b07538ca1b320875)] /usr/bin/git branch
+[09:05:10] :			 [Update checkout directory (/opt/teamcity/work/b07538ca1b320875)] /usr/bin/git update-ref refs/heads/dev 1b116ec5d913fe71e0e44f8b3e1e78e740093145
+[09:05:10] :			 [Update checkout directory (/opt/teamcity/work/b07538ca1b320875)] /usr/bin/git -c core.askpass=/opt/teamcity/temp/buildTmp/pass8447573013350329728 -c credential.helper= -c credential.helper=/opt/teamcity/temp/buildTmp/credHelper10088190988456388989.sh checkout -q -f dev
+[09:05:10] :			 [Update checkout directory (/opt/teamcity/work/b07538ca1b320875)] /usr/bin/git branch --set-upstream-to=refs/remotes/origin/dev
+[09:05:10] :			 [Update checkout directory (/opt/teamcity/work/b07538ca1b320875)] Cleaning https://github.com/jigsawxyz/looksee-mobile-app#refs/heads/dev in /opt/teamcity/work/b07538ca1b320875 the file set ALL_UNTRACKED
+[09:05:10] :			 [Update checkout directory (/opt/teamcity/work/b07538ca1b320875)] /usr/bin/git clean -f -d -x
+[09:05:12] : Build preparation done
+[09:05:12]E: Step 1/1: Command Line (1m:45s)
+[09:05:12]i:	 [Step 1/1] Content of /opt/teamcity/temp/agentTmp/custom_script7740241591366217234 file: 
+npm install
+npm run format -- --check
+npm run lint
+[09:05:12] :	 [Step 1/1] Running step within Docker container node:16
+[09:05:12]i:	 [Step 1/1] Docker wrapper settings
+[09:05:12]i:		 [Docker wrapper settings] Docker environment (--env-file): 
+BUILD_VCS_NUMBER_StandardBankHomeServices_HttpsGithubComJigsawxyzLookseeMobileAppRefsHeadsDev
+TEAMCITY_VERSION
+BUILD_VCS_NUMBER
+TEAMCITY_BUILDCONF_NAME
+TEAMCITY_BUILD_PROPERTIES_FILE
+TMPDIR
+TEAMCITY_PROJECT_NAME
+BUILD_NUMBER
+TEMP
+TMP
+TEAMCITY_PROCESS_PARENT_FLOW_ID
+TEAMCITY_CAPTURE_ENV
+TEAMCITY_PROCESS_FLOW_ID
+
+[09:05:12]i:		 [Docker wrapper settings] Docker environment source: 
+export BUILD_VCS_NUMBER_StandardBankHomeServices_HttpsGithubComJigsawxyzLookseeMobileAppRefsHeadsDev="1b116ec5d913fe71e0e44f8b3e1e78e740093145"
+export TEAMCITY_VERSION="2019.1.3 (build 66439)"
+export BUILD_VCS_NUMBER="1b116ec5d913fe71e0e44f8b3e1e78e740093145"
+export TEAMCITY_BUILDCONF_NAME="Full Build"
+export TEAMCITY_BUILD_PROPERTIES_FILE="/opt/teamcity/temp/buildTmp/teamcity.build8824236537296055835.properties"
+export TMPDIR="/opt/teamcity/temp/buildTmp"
+export TEAMCITY_PROJECT_NAME="Standard Bank Home Services"
+export BUILD_NUMBER="51"
+export TEMP="/opt/teamcity/temp/buildTmp"
+export TMP="/opt/teamcity/temp/buildTmp"
+export TEAMCITY_PROCESS_PARENT_FLOW_ID=""
+export TEAMCITY_CAPTURE_ENV="\"/usr/lib/jvm/java-11-openjdk-amd64/bin/java\" -jar \"/opt/teamcity/plugins/environment-fetcher/bin/env-fetcher.jar\""
+export TEAMCITY_PROCESS_FLOW_ID="12090800729770615"
+
+[09:05:12]i:		 [Docker wrapper settings] Docker run parameters: 
+docker docker run --rm -w /opt/teamcity/work/b07538ca1b320875/lookseeMobileApp --label jetbrains.teamcity.buildId=552590
+[09:05:12]i:		 [Docker wrapper settings] Extra docker volumes: 
+/opt/teamcity/work/b07538ca1b320875:/opt/teamcity/work/b07538ca1b320875
+/opt/teamcity/temp/agentTmp:/opt/teamcity/temp/agentTmp
+/opt/teamcity/temp/buildTmp:/opt/teamcity/temp/buildTmp
+/opt/teamcity/system:/opt/teamcity/system
+/opt/teamcity/lib:/opt/teamcity/lib:ro
+/opt/teamcity/tools:/opt/teamcity/tools:ro
+/opt/teamcity/plugins:/opt/teamcity/plugins:ro
+[09:05:12]i:		 [Docker wrapper settings] Docker script (to be run inside docker):
+#!/bin/sh
+# Created by Teamcity docker plugin
+
+/opt/teamcity/temp/agentTmp/custom_script7740241591366217234
+
+[09:05:12] :	 [Step 1/1] Starting: /bin/sh -c ". /opt/teamcity/temp/agentTmp/docker-wrapper-7201205769817306590.sh && docker run --rm -w /opt/teamcity/work/b07538ca1b320875/lookseeMobileApp --label jetbrains.teamcity.buildId=552590 -v "/opt/teamcity/work/b07538ca1b320875:/opt/teamcity/work/b07538ca1b320875" -v "/opt/teamcity/temp/agentTmp:/opt/teamcity/temp/agentTmp" -v "/opt/teamcity/temp/buildTmp:/opt/teamcity/temp/buildTmp" -v "/opt/teamcity/system:/opt/teamcity/system" -v "/opt/teamcity/lib:/opt/teamcity/lib:ro" -v "/opt/teamcity/tools:/opt/teamcity/tools:ro" -v "/opt/teamcity/plugins:/opt/teamcity/plugins:ro" --env-file /opt/teamcity/temp/agentTmp/docker-wrapper-5774270736329764946.envList --entrypoint /bin/sh "node:16" /opt/teamcity/temp/agentTmp/docker-shell-script-7140912127496564083.sh"
+[09:05:12] :	 [Step 1/1] in directory: /opt/teamcity/work/b07538ca1b320875/lookseeMobileApp
+[09:05:12]i:	 [Step 1/1] Docker event: {"status":"create","id":"b4807c07f5f1cc46108f5687676890357228942094a6d00eb127f67f8410ab83","from":"node:16","Type":"container","Action":"create","Actor":{"ID":"b4807c07f5f1cc46108f5687676890357228942094a6d00eb127f67f8410ab83","Attributes":{"image":"node:16","jetbrains.teamcity.buildId":"552590","name":"awesome_black"}},"scope":"local","time":1621407912,"timeNano":1621407912345526750}
+[09:05:12]i:	 [Step 1/1] Create docker info file: /opt/teamcity/temp/buildTmp/.teamcity/docker/build_51/events.json
+[09:05:12]i:	 [Step 1/1] Docker event: {"status":"attach","id":"b4807c07f5f1cc46108f5687676890357228942094a6d00eb127f67f8410ab83","from":"node:16","Type":"container","Action":"attach","Actor":{"ID":"b4807c07f5f1cc46108f5687676890357228942094a6d00eb127f67f8410ab83","Attributes":{"image":"node:16","jetbrains.teamcity.buildId":"552590","name":"awesome_black"}},"scope":"local","time":1621407912,"timeNano":1621407912350762177}
+[09:05:12]i:	 [Step 1/1] Docker event: {"status":"start","id":"b4807c07f5f1cc46108f5687676890357228942094a6d00eb127f67f8410ab83","from":"node:16","Type":"container","Action":"start","Actor":{"ID":"b4807c07f5f1cc46108f5687676890357228942094a6d00eb127f67f8410ab83","Attributes":{"image":"node:16","jetbrains.teamcity.buildId":"552590","name":"awesome_black"}},"scope":"local","time":1621407912,"timeNano":1621407912856799902}
+[09:06:47]E:	 [Step 1/1] npm notice 
+[09:06:47]E:	 [Step 1/1] npm notice New minor version of npm available! 7.11.2 -> 7.13.0
+[09:06:47]E:	 [Step 1/1] npm notice Changelog: <https://github.com/npm/cli/releases/tag/v7.13.0>
+[09:06:47]E:	 [Step 1/1] npm notice Run `npm install -g npm@7.13.0` to update!
+[09:06:47]E:	 [Step 1/1] npm notice 
+[09:06:47]E:	 [Step 1/1] npm ERR! code ERR_SOCKET_TIMEOUT
+[09:06:47]E:	 [Step 1/1] npm ERR! errno ERR_SOCKET_TIMEOUT
+[09:06:47]E:	 [Step 1/1] npm ERR! request to https://registry.npmjs.org/yargs/-/yargs-15.4.1.tgz failed, reason: Socket timeout
+[09:06:47]E:	 [Step 1/1] 
+[09:06:47]E:	 [Step 1/1] npm ERR! A complete log of this run can be found in:
+[09:06:47]E:	 [Step 1/1] npm ERR!     /root/.npm/_logs/2021-05-19T07_06_47_848Z-debug.log
+[09:06:56] :	 [Step 1/1] 
+[09:06:56] :	 [Step 1/1] > lookseeMobileApp@0.0.1 format
+[09:06:56] :	 [Step 1/1] > prettier . "--check"
+[09:06:56] :	 [Step 1/1] 
+[09:06:56]E:	 [Step 1/1] sh: 1: prettier: not found
+[09:06:56]E:	 [Step 1/1] npm notice 
+[09:06:56]E:	 [Step 1/1] npm notice New minor version of npm available! 7.11.2 -> 7.13.0
+[09:06:56]E:	 [Step 1/1] npm notice Changelog: <https://github.com/npm/cli/releases/tag/v7.13.0>
+[09:06:56]E:	 [Step 1/1] npm notice Run `npm install -g npm@7.13.0` to update!
+[09:06:56]E:	 [Step 1/1] npm notice 
+[09:06:56] :	 [Step 1/1] 
+[09:06:56] :	 [Step 1/1] > lookseeMobileApp@0.0.1 lint
+[09:06:56] :	 [Step 1/1] > eslint .
+[09:06:56] :	 [Step 1/1] 
+[09:06:56]E:	 [Step 1/1] sh: 1: eslint: not found
+[09:06:56]i:	 [Step 1/1] Docker event: {"status":"die","id":"b4807c07f5f1cc46108f5687676890357228942094a6d00eb127f67f8410ab83","from":"node:16","Type":"container","Action":"die","Actor":{"ID":"b4807c07f5f1cc46108f5687676890357228942094a6d00eb127f67f8410ab83","Attributes":{"exitCode":"127","image":"node:16","jetbrains.teamcity.buildId":"552590","name":"awesome_black"}},"scope":"local","time":1621408016,"timeNano":1621408016789366046}
+[09:06:57]W:	 [Step 1/1] Process exited with code 127
+[09:06:57]i:	 [Step 1/1] Docker event: {"status":"destroy","id":"b4807c07f5f1cc46108f5687676890357228942094a6d00eb127f67f8410ab83","from":"node:16","Type":"container","Action":"destroy","Actor":{"ID":"b4807c07f5f1cc46108f5687676890357228942094a6d00eb127f67f8410ab83","Attributes":{"image":"node:16","jetbrains.teamcity.buildId":"552590","name":"awesome_black"}},"scope":"local","time":1621408017,"timeNano":1621408017619981407}
+[09:06:57]E:	 [Step 1/1] Process exited with code 127 (Step: Command Line)
+[09:06:57]E:	 [Step 1/1] Step Command Line failed
+[09:06:57] : Publishing artifacts (2s)
+[09:06:57] :	 [Publishing artifacts] Collecting files to publish: [/opt/teamcity/temp/buildTmp/.teamcity/docker/build_51/events.json => .teamcity/docker/]
+[09:07:00] :	 [Publishing artifacts] Publishing 1 file using [ArtifactsCachePublisher]: /opt/teamcity/temp/buildTmp/.teamcity/docker/build_51/events.json => .teamcity/docker
+[09:07:00] :	 [Publishing artifacts] Publishing 1 file using [WebPublisher]: /opt/teamcity/temp/buildTmp/.teamcity/docker/build_51/events.json => .teamcity/docker
+[09:06:57] : Publishing internal artifacts (3s)
+[09:07:00] :	 [Publishing internal artifacts] Publishing 1 file using [ArtifactsCachePublisher]
+[09:07:00] :	 [Publishing internal artifacts] Publishing 1 file using [WebPublisher]
+[09:07:01] : Build finished
