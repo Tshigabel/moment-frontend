@@ -20,7 +20,7 @@ export class TokenService {
     // // body = body.append('scope', 'read write');
     // // body = body.append('grant_type', 'password');
     // // body = body.append('client_id', config.clientId);
-    const body = {username: 'javainuse', password: 'password'};
+    const body = {username, password};
 
 
     return this.httpClient.post(this.url, body, {
