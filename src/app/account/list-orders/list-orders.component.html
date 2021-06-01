@@ -65,10 +65,10 @@
           </div>
           <div class="row">
             <div class="col-md-6 col-6">
-              <p>Cargo Price: <span>{{order.totalCargoPrice}} €</span></p>
+              <p>Cargo Price: <span>R {{order.totalCargoPrice}}</span></p>
             </div>
             <div class="col-md-6 col-6">
-              <p>Final Price: <span>{{ order.totalPrice }} €</span></p>
+              <p>Final Price: <span>R {{ order.totalPrice }}</span></p>
             </div>
           </div>
           <div class="row" *ngIf="order.discount">
@@ -107,7 +107,7 @@
                       <p class="amount">Amount: <span>{{orderDetail.amount}}</span></p>
                     </div>
                     <div class="col-md-6">
-                      <p class="price">{{orderDetail.price}} €</p>
+                      <p class="price">R {{orderDetail.price}}</p>
                     </div>
                   </div>
                 </div>

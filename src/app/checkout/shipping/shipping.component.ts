@@ -32,7 +32,7 @@ export class ShippingComponent implements OnInit {
       billingAddress: new FormControl(null, [Validators.pattern('[0-9a-zA-Z #,-]+'), BlankValidators.checkIfBlankValidator, Validators.minLength(3), Validators.maxLength(240)]),
       city: new FormControl(null, [Validators.pattern('^[a-zA-Z\\s]+$'), Validators.required, BlankValidators.notBlankValidator, Validators.minLength(3), Validators.maxLength(100)]),
       state: new FormControl(null, [Validators.pattern('^[a-zA-Z\\s]+$'), BlankValidators.checkIfBlankValidator, Validators.minLength(3), Validators.maxLength(40)]),
-      zip: new FormControl(null, [Validators.required, Validators.pattern('^[0-9]*$'), Validators.maxLength(6), Validators.minLength(5)]),
+      zip: new FormControl(null, [Validators.required, Validators.pattern('^[0-9]+'), Validators.maxLength(6), Validators.minLength(4)]),
       country: new FormControl(null, [Validators.pattern('^[a-zA-Z\\s]+$'), Validators.required, BlankValidators.notBlankValidator, Validators.minLength(3), Validators.maxLength(40)])
     });
 

@@ -45,7 +45,7 @@
             <div class="form-group">
               <label for="zip">ZIP</label>
               <input type="text" id="zip" class="form-control" name="zip" formControlName="zip" [maxlength]="6"
-                [minlength]="5">
+                [minlength]="4">
               <span *ngIf="shippingForm.get('zip').invalid && shippingForm.get('zip').touched" class="alert-danger">
                 Please enter a valid zip number!
               </span>

@@ -19,7 +19,7 @@
             <p class="amount">Amount: <span>{{cartItem.amount}}</span></p>
           </div>
           <div class="col-md-6">
-            <p class="price">{{cartItem.price}} €</p>
+            <p class="price">R {{cartItem.price}}</p>
           </div>
         </div>
       </div>
@@ -31,7 +31,7 @@
         <span class="label">Cart</span>
       </div>
       <div class="col-md-8 col-8">
-        <span>{{(cartState | async).cart.totalCartPrice.toFixed(2) | number:'1.2' }} €</span>
+        <span>R {{(cartState | async).cart.totalCartPrice.toFixed(2) | number:'1.2' }}</span>
       </div>
     </div>
     <div class="row ">
@@ -39,7 +39,7 @@
         <span class="label">Shipping</span>
       </div>
       <div class="col-md-8 col-8">
-        <span>{{(cartState | async).cart.totalCargoPrice.toFixed(2) | number:'1.2' }} €</span>
+        <span>R {{(cartState | async).cart.totalCargoPrice.toFixed(2) | number:'1.2' }}</span>
       </div>
     </div>
 
@@ -59,7 +59,7 @@
         <span class="label">Total</span>
       </div>
       <div class="col-md-8 col-8">
-        <span>{{(cartState | async).cart.totalPrice.toFixed(2) | number:'1.2' }} €</span>
+        <span>R {{(cartState | async).cart.totalPrice.toFixed(2) | number:'1.2' }}</span>
       </div>
     </div>
   </div>

@@ -39,7 +39,7 @@
         </div>
 
         <div class="col-md-2 item-price">
-          <span *ngIf="cartItem.stock >= cartItem.amount">{{cartItem.price}} €</span>
+          <span *ngIf="cartItem.stock >= cartItem.amount">R {{cartItem.price}}</span>
           <span *ngIf="cartItem.stock < cartItem.amount">Out Of Stock</span>
         </div>
 
@@ -60,7 +60,7 @@
             <span class="label">Cart</span>
           </div>
           <div class="col-md-8 col-8">
-            <span>{{(cartState | async).cart.totalCartPrice.toFixed(2) | number:'1.2' }} €</span>
+            <span>R {{(cartState | async).cart.totalCartPrice.toFixed(2) | number:'1.2' }}</span>
           </div>
         </div>
         <div class="row ">
@@ -68,7 +68,7 @@
             <span class="label">Shipping</span>
           </div>
           <div class="col-md-8 col-8">
-            <span>{{(cartState | async).cart.totalCargoPrice.toFixed(2) | number:'1.2' }} €</span>
+            <span>R {{(cartState | async).cart.totalCargoPrice.toFixed(2) | number:'1.2' }}</span>
           </div>
         </div>
 
@@ -96,7 +96,7 @@
             <span class="label">Total</span>
           </div>
           <div class="col-md-8 col-8">
-            <span>{{(cartState | async).cart.totalPrice.toFixed(2) | number:'1.2' }} €</span>
+            <span>R {{(cartState | async).cart.totalPrice.toFixed(2) | number:'1.2' }}</span>
           </div>
         </div>
       </div>
